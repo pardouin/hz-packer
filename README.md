@@ -74,7 +74,7 @@ The classic 2:1 unpacker costs 25 chars, so it's interesting if the script to pa
 HZ unpacker costs 20 chars, but you need to tailor your script to both deal with the wrapper AND end up with only valid pairs, which will very rarely take less than 5 bytes to fix - it can take exceptionally less if your script was already shaped like a comprehension dict or set, for example. So a realistic lower bound would be a script of length 47 that requires 5 bytes to fix:
 
 ```
-(47 + 5)/2 + 20 = 26 + 20 = 46
+(47 + 5)/2 + 20 = 52/2 + 20 = 26 + 20 = 46
 ```
 
 So in general HZ has more potential than the classic 2:1, but you get benefits from it only if your script can be fixed with at most 8~9 bytes, which is usually quite challenging - and the longer the script is, the more pairs to fix, so the window where HZ shines is not that wide.
