@@ -79,5 +79,5 @@ HZ unpacker costs 20 chars, but you need to tailor your script to both deal with
 
 So in general HZ has more potential than the classic 2:1, but you get benefits from it only if your script can be fixed with at most 8~9 bytes, which is usually quite challenging - and the longer the script is, the more pairs to fix, so the window where HZ shines is not that wide.
 
-Note: in Coconut, HZ unpacker cost chars only, and Coconut `argv` is available without import through `os.sys`, leading to less rewriting, so sometimes HZ will save in Coconut while not saving in Python.
+Note: in Coconut, HZ unpacker cost 18 chars only, and Coconut `argv` is available without import through `os.sys`, leading to less rewriting, so sometimes HZ will save in Coconut while not saving in Python.
 
